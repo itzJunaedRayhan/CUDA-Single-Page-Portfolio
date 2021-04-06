@@ -25,7 +25,6 @@ html{
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 body{
@@ -136,7 +135,6 @@ h4{
 
 /*====================================    START HEADER SECTION  ======================================*/
 header{
-    background:-webkit-gradient(linear,left top, left bottom,from(rgba(135, 80, 156, 0.9)),to(rgba(135, 80, 156, 0.9))), url(images/hero-bg.jpg) no-repeat;
     background:linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(images/hero-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -169,7 +167,6 @@ header{
     border-radius: 0.3rem;
     background: rgba(100, 58, 121, 0);
     font-size: 1.6rem;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .main-nav li:hover a:link,
@@ -184,7 +181,6 @@ header{
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -226,7 +222,6 @@ header{
     left: 0;
     z-index: 1;
     overflow-x: hidden;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 .overlay-content{
@@ -265,7 +260,6 @@ header{
 .services-section{
     color: #fff;
     text-align: center;
-    background:-webkit-gradient(linear,left top, left bottom,from(rgba(23, 194, 163, 0.9)),to(rgba(23, 194, 163, 0.9))), url(images/services-bg.jpg) no-repeat;
     background:linear-gradient(rgba(23, 194, 163, 0.9),rgba(23, 194, 163, 0.9)), url(images/services-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center top;
@@ -296,7 +290,6 @@ header{
 
 /*====================================    START TEAM SECTION  ======================================*/
 .team-section{
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(231, 241, 248, 0.9)),to(rgba(231, 241, 248, 0.9))), url(images/team-bg.jpg) no-repeat;
     background: linear-gradient(rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9)), url(images/team-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center top;
@@ -346,12 +339,10 @@ header{
     text-align: center;
     padding-top: 0.3rem;
     font-size: 2rem;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 .social-link ul li:hover{
     background-color: #393939;
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 .social-link ul li a{
@@ -374,7 +365,6 @@ header{
 
 /*====================================    START SKILL SECTION  ======================================*/
 .skill-section{
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(255, 255, 255, 0.9)),to(rgba(255, 255, 255, 0.9))), url(images/skill-bg.jpg);
     background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)), url(images/skill-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,7 +424,6 @@ svg.ui-ux circle{
 /*====================================    START PORTFOLIO SECTION  ======================================*/
 .portfolio-section{
     color: #393939;
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(255, 221, 153, 0.9)),to(rgba(255, 221, 153, 0.9))),url(images/portfolio-bg.jpg);
     background: linear-gradient(rgba(255, 221, 153, 0.9),rgba(255, 221, 153, 0.9)),url(images/portfolio-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -466,7 +455,6 @@ svg.ui-ux circle{
     text-transform: uppercase;
     color: #3c4761;
     margin: 0 .5rem;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
 }
@@ -475,7 +463,6 @@ svg.ui-ux circle{
 }
 .portfolio-filter button:hover{
     cursor: pointer;
-    -webkit-box-shadow:inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.5);
     box-shadow:inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.5);
 }
 .portfolio-image{
@@ -509,7 +496,6 @@ svg.ui-ux circle{
 
 /*====================================    START TESTIMONIAL SECTION  ======================================*/
 .testimonial-section{
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(215, 70, 128, 0.9)),to(rgba(215, 70, 128, 0.9))),url(images/testimonial-bg.jpg);
     background: linear-gradient(rgba(215, 70, 128, 0.9),rgba(215, 70, 128, 0.9)),url(images/testimonial-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -570,7 +556,6 @@ svg.ui-ux circle{
 
 /*====================================    START CONTACT SECTION  ======================================*/
 .contact-section{
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(60, 84, 153, 0.9)),to(rgba(60, 84, 153, 0.9))),url(images/contact-bg.jpg);
     background: linear-gradient(rgba(60, 84, 153, 0.9),rgba(60, 84, 153, 0.9)),url(images/contact-bg.jpg);
     background-repeat: no-repeat;
     background-position: center 20%;
@@ -604,14 +589,6 @@ svg.ui-ux circle{
     height: 20rem;
     font-family: 'TitilliumWeb-Regular';
 }
-.contact-section form ::-webkit-input-placeholder{
-    color: #fff;
-    opacity: 1;
-}
-.contact-section form :-ms-input-placeholder{
-    color: #fff;
-    opacity: 1;
-}
 .contact-section form ::placeholder{
     color: #fff;
     opacity: 1;
@@ -623,11 +600,9 @@ svg.ui-ux circle{
     width: 240px;
     display: block;
     margin: 3rem auto;
-    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 .btn-submit:hover{
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     cursor: pointer;
     border: .3rem solid #299ec5;
@@ -676,30 +651,3 @@ svg.ui-ux circle{
 
 
 
-
-/*====================================    START Animated Circle SECTION  ======================================*/
-svg.radial-progress {
-    height: auto;
-    max-width: 200px;
-    padding: 1em;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    width: 100%;
-}
-  
-svg.radial-progress circle {
-    fill: rgba(0,0,0,0);
-    stroke: #fff;
-    stroke-dashoffset: 219.91148575129; 
-    stroke-width: 10;
-}
-  
-svg.radial-progress circle.incomplete { opacity: 0.25; }
-
-svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
-
-svg.radial-progress text {
-    fill: #fff;
-    text-anchor: middle;
-}
-/*================X===============X=====    END FOOTER SECTION  ======X=================X=============*/
