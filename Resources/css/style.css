@@ -1,0 +1,705 @@
+@font-face{
+    font-family: 'TitilliumWeb-Light';
+    src: url('/./fonts/TitilliumWeb-Light.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'TitilliumWeb-Regular';
+    src: url('/./fonts/TitilliumWeb-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'TitilliumWeb-Bold';
+    src: url('/./fonts/TitilliumWeb-Bold.ttf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url('/./fonts/TitilliumWeb-SemiBold.ttf');
+    font-weight: 600;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'TitilliumWeb-Light';
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+:focus{
+    outline: 0;
+}
+h1{
+    font-size: 3.9rem;
+    color: #fff;
+    font-family: 'TitilliumWeb-Light';
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+/*====================================    REUSABLE COMPONENT  ======================================*/
+.row{
+    width: 120rem;
+    margin: 0 auto;
+}
+section{
+    padding: 3.8rem 0;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    background-color: #333;
+    border-bottom: .3rem solid #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    margin-top: 4.5rem;
+    font-size: 1.8rem;
+    font-family: 'TitilliumWeb-SemiBold';
+}
+h2{
+    font-size: 4rem;
+    font-family: 'TitilliumWeb-Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .5rem;
+    width: 9rem;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 2.4rem;
+    font-family: 'TitilliumWeb-SemiBold';
+    text-transform: uppercase;
+    color: #fff;
+}
+h4{
+    font-size: 1.8rem;
+    font-family: 'TitilliumWeb-Regular';
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+}
+.little-description{
+    font-family: 'TitilliumWeb-Regular';
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+    text-align: center;
+}
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-family: 'TitilliumWeb-Light';
+    margin-top: 3rem;
+    color: #fff;
+}
+/*================X===============X=====    END REUSABLE COMPONENT  ======X=================X=============*/
+
+
+
+
+
+
+/*====================================    START HEADER SECTION  ======================================*/
+header{
+    background:-webkit-gradient(linear,left top, left bottom,from(rgba(135, 80, 156, 0.9)),to(rgba(135, 80, 156, 0.9))), url(images/hero-bg.jpg) no-repeat;
+    background:linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(images/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+.logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+.main-nav{
+    float: right;
+    margin-top: 4rem;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-transform: uppercase;
+    padding: 0.6rem 1.6rem;
+    border-radius: 0.3rem;
+    background: rgba(100, 58, 121, 0);
+    font-size: 1.6rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background: rgba(100, 58, 121, 1);
+}
+.main-nav li.active a{
+    background: rgba(100, 58, 121, 1);
+}
+.hero-text-box{
+    width: 114rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background-color: #eb7d4b;
+    border-color: #c86a40;
+}
+/************* Sticky Navigation   *************/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #87509c;
+    padding: 1rem 0;
+    z-index: 999;
+}
+.sticky .logo{
+    margin-top: 0;
+}
+.sticky .main-nav{
+    margin-top: 0.2rem;
+}
+/*************  Mobile Menu  *************/
+.mobile-menu span{
+    color: #fff;
+    font-size: 4rem;
+    float: right;
+    margin-top: -3rem;
+    display: none;
+}
+.overlay{
+    width: 0%;
+    background-color: rgba(0,0,0,0.9);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.overlay-content{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+}
+.overlay a{
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #999;
+    padding: 1rem 0;
+}
+.overlay a:hover{
+    color: #fff;
+}
+.closeBtn{
+    position: absolute;
+    top: 5.5rem;
+    right: 3rem;
+}
+/*================X===============X=====    END HEADER SECTION  ======X=================X=============*/
+
+
+
+
+
+
+    
+
+
+/*====================================    START SERVICES SECTION  ======================================*/
+.services-section{
+    color: #fff;
+    text-align: center;
+    background:-webkit-gradient(linear,left top, left bottom,from(rgba(23, 194, 163, 0.9)),to(rgba(23, 194, 163, 0.9))), url(images/services-bg.jpg) no-repeat;
+    background:linear-gradient(rgba(23, 194, 163, 0.9),rgba(23, 194, 163, 0.9)), url(images/services-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.services-section h2::after{
+    background-color: #14a58c;
+}
+.services-icon{
+    height: 10.25rem;
+    margin: 7.5rem 0 6rem 0;
+}
+.services-section .box h3{
+    font-family: 'TitilliumWeb-Bold';
+}
+.services-section .box p{
+    font-family: 'TitilliumWeb-Light';
+}
+/*================X===============X=====    END SERVICES SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+
+/*====================================    START TEAM SECTION  ======================================*/
+.team-section{
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(231, 241, 248, 0.9)),to(rgba(231, 241, 248, 0.9))), url(images/team-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9)), url(images/team-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    text-align: center;
+}
+.team-section h2{
+    color: #3c4761;
+}
+.team-section h2::after{
+    background-color: #c8d9e5;
+}
+.team-section p.little-description{
+    color: #5d677b;
+}
+.team-member{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.team-section h3{
+    color: #27283d;
+}
+.role{
+    display: inline-block;
+    color: #30bae7;
+    font-size: 1.6rem;
+    font-family: 'TitilliumWeb-Regular';
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+}
+.team-section .box p{
+    color: #3c4761;
+}
+.social-link{
+    margin-top: 2.5rem;
+}
+.social-link ul li{
+    display: inline-block;
+    margin: 0 0.5rem;
+    background-color: #bdd1df;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.social-link ul li:hover{
+    background-color: #393939;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.social-link ul li a{
+    color: #fff;
+}
+
+/*================X===============X=====    END TEAM SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================    START SKILL SECTION  ======================================*/
+.skill-section{
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(255, 255, 255, 0.9)),to(rgba(255, 255, 255, 0.9))), url(images/skill-bg.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)), url(images/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #3c4761;
+    text-align: center;
+}
+.skill-section h2{
+    color: #3c4761;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section p{
+    font-family: 'TitilliumWeb-Regular';
+    font-size: 1.8rem;
+}
+.skill-section h3{
+    font-family: 'TitilliumWeb-Bold';
+    font-size: 18px;
+    color: #3c4761;
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+svg.radial-progress text{
+    fill: #3c4761;
+    font-size: 1.5rem;
+}
+svg.web-design circle{
+    stroke: #30bae7;
+}
+svg.html-css circle{
+    stroke: #d74680;
+}
+svg.graphic-design circle{
+    stroke: #15c7a8;
+}
+svg.ui-ux circle{
+    stroke: #eb7d4b;
+}
+/*================X===============X=====    END TEAM SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================    START PORTFOLIO SECTION  ======================================*/
+.portfolio-section{
+    color: #393939;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(255, 221, 153, 0.9)),to(rgba(255, 221, 153, 0.9))),url(images/portfolio-bg.jpg);
+    background: linear-gradient(rgba(255, 221, 153, 0.9),rgba(255, 221, 153, 0.9)),url(images/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+.portfolio-section h2{
+    color: #393939;
+    font-size: 4rem;
+    font-family: 'TitilliumWeb-Bold';
+}
+.portfolio-section h2::after{
+    background: #e5c37f;
+}
+.portfolio-section p{
+    font-size: 1.8rem;
+    font-family: 'TitilliumWeb-Regular';
+}
+.portfolio-filter{
+    margin: 4.5rem 0;
+}
+.portfolio-filter button{
+    background: #ebc985;
+    font-size: 18px;
+    font-family: 'TitilliumWeb-Regular';
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: #3c4761;
+    margin: 0 .5rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.portfolio-filter button:first-child{
+    background: #fff;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    -webkit-box-shadow:inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.5);
+    box-shadow:inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.5);
+}
+.portfolio-image{
+    width: 100%;
+    height: auto;
+}
+.portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+.portfolio-section .btn-load-more{
+    background: #17c2a4;
+    border-color: #14a58c;
+}
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+}
+/*================X===============X=====    END PORTFOLIO SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================    START TESTIMONIAL SECTION  ======================================*/
+.testimonial-section{
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(215, 70, 128, 0.9)),to(rgba(215, 70, 128, 0.9))),url(images/testimonial-bg.jpg);
+    background: linear-gradient(rgba(215, 70, 128, 0.9),rgba(215, 70, 128, 0.9)),url(images/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+.testimonial-section h2{
+    padding-top: 6rem;
+}
+.testimonial-section h2::after{
+    background: #b73c6d;
+}
+.testimonial-section .col:nth-child(3){
+    margin-left: 0;
+}
+.testimonial-section .col:nth-child(1),
+.testimonial-section .col:nth-child(2){
+    margin-top: 4rem;
+}
+.testimonial-section .col:nth-child(3),
+.testimonial-section .col:nth-child(4){
+    margin-top: 8rem;
+}
+.client-photo{
+    width: 10rem;
+    float: left;
+}
+.client-photo img{
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.client-review{
+    width: 35rem;
+    float: left;
+}
+.client-review p{
+    font-size: 2.1rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.client-review .role{
+    color: #ffdd99;
+}
+/*================X===============X=====    END TESTIMONIAL SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================    START CONTACT SECTION  ======================================*/
+.contact-section{
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(60, 84, 153, 0.9)),to(rgba(60, 84, 153, 0.9))),url(images/contact-bg.jpg);
+    background: linear-gradient(rgba(60, 84, 153, 0.9),rgba(60, 84, 153, 0.9)),url(images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.contact-section h2::after{
+    background: #273a71;
+}
+.contact-section .little-description{
+    font-size: 1.6rem;
+}
+.contact-section form {
+    margin-top: 5rem;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0.5rem 0;
+    outline: 0;
+}
+.contact-section textarea{
+    height: 20rem;
+    font-family: 'TitilliumWeb-Regular';
+}
+.contact-section form ::-webkit-input-placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.contact-section form :-ms-input-placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.contact-section .btn-submit{
+    border: .3rem solid transparent;
+    border-bottom: 0.3rem solid #299ec5;
+    background: #30bae7;
+    width: 240px;
+    display: block;
+    margin: 3rem auto;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.btn-submit:hover{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: .3rem solid #299ec5;
+    color: #13bef7;
+    background: transparent;
+}
+/*================X===============X=====    END CONTACT SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================    START FOOTER SECTION  ======================================*/
+.footer-section{
+    background: #344b8e;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 0.1rem solid rgb(255, 255, 255, 0.2);
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer-section li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+}
+.footer-section li:hover a{
+    color: #30bae7;
+}
+/*================X===============X=====    END FOOTER SECTION  ======X=================X=============*/
+
+
+
+
+
+
+
+
+
+/*====================================    START Animated Circle SECTION  ======================================*/
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 100%;
+}
+  
+svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 10;
+}
+  
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+
+svg.radial-progress text {
+    fill: #fff;
+    text-anchor: middle;
+}
+/*================X===============X=====    END FOOTER SECTION  ======X=================X=============*/
