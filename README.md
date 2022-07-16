@@ -1,31 +1,24 @@
 Website Name : CUDA - Single-Page-Portfolio
 
-Website Live Link : https://webgenesis-single-page-portfolio.netlify.app/
+Website Live Link : https://webgenesis-single-page-portfolio.netlify.app/ <br>
 
-Technologies : HTML, CSS, GRID, JQUERY PLUGINS,MEDIA QUERY
+Technologies : HTML, CSS, GRID, JQUERY PLUGINS,MEDIA QUERY <br>
 
-Website Features : 
-            1.  Home
-            2.  Services
-            3.  Team
-            4.  Skill with rounded 
-            5.  Portfolio with clickable Gallery
-            6.  Testimonial
-            7.  Contact
-            8.  Footer with Social Links
-            9.  Responsive
-            10. Sticky Navigation
-            11. Hamburger Menu and So more
-
-
-
-If You Need Any kind of website you can find me on Fiverr.
-Fiverr: https://www.fiverr.com/itzjunaedrayhan
-You Need this website you can get it from Here:  
-https://www.fiverr.com/share/r9BGXb
+Website Features : <br>
+            1.  Home <br>
+            2.  Services <br>
+            3.  Team <br>
+            4.  Skill with rounded  <br>
+            5.  Portfolio with clickable Gallery <br>
+            6.  Testimonial <br>
+            7.  Contact <br>
+            8.  Footer with Social Links <br>
+            9.  Responsive <br>
+            10. Sticky Navigation <br>
+            11. Hamburger Menu and So more <br>
 
 
-Stay With us:  
-Facebook: https://www.facebook.com/itzJunaedRayhan
-Linkedin: https://www.linkedin.com/in/itzJunaedRayhan
-Fiverr: https://www.fiverr.com/itzjunaedrayhan
+Stay With us:  <br>
+Facebook: https://www.facebook.com/itzJunaedRayhan <br>
+Linkedin: https://www.linkedin.com/in/itzJunaedRayhan <br>
+Fiverr: https://www.fiverr.com/itzjunaedrayhan <br>
